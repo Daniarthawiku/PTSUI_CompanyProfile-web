@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
 const config: Config = {
     content: [
@@ -34,7 +35,29 @@ const config: Config = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("daisyui")
+    ],
+
+    daisyui: {
+        themes: [
+        {
+            suiTheme: {
+                "primary": "#056839",           // Primary Base
+                "primary-focus": "#034224",     // Primary Dark (untuk hover)
+                "primary-content": "#ffffff",   // Warna teks di atas tombol primary
+                "secondary": "#8A5F3C",         // Secondary Base
+                "secondary-focus": "#593C25",   // Secondary Dark
+                "secondary-content": "#ffffff", 
+                "accent": "#3C8B60",            // Primary Mid
+                "neutral": "#212523",           // Neutral Text
+                "base-100": "#F8F9F6",          // Background utama website
+                "base-200": "#EFECE6",          // Background untuk card
+                "base-300": "#D8D5CD",          // Border color
+            },
+        },
+        ],
+    },
 };
 
 export default config;
