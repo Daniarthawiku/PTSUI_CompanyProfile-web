@@ -13,7 +13,7 @@ const merriweather = Merriweather({
 // font Plus Jakarta Sans Sub Heading & Body
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "600"], // Regular dan SemiBold
+  weight: ["400", "600"], // Regular and SemiBold
   variable: "--font-plus-jakarta-sans",
   display: "swap",
 });
