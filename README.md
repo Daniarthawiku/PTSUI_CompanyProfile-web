@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## On Going
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+ptsui-website
+├─ eslint.config.mjs
+├─ next.config.ts
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ public
+│  ├─ icons
+│  │  ├─ about
+│  │  │  ├─ icon-certificat.svg
+│  │  │  ├─ icon-leaf-sync.svg
+│  │  │  └─ icon-shield-check.svg
+│  │  ├─ contact
+│  │  │  ├─ icon-mail.svg
+│  │  │  ├─ icon-phone.svg
+│  │  │  ├─ icon-pin.svg
+│  │  │  └─ icon-whatsapp.svg
+│  │  ├─ export
+│  │  │  ├─ icon-bank.svg
+│  │  │  ├─ icon-check-circle.svg
+│  │  │  ├─ icon-globe-large.svg
+│  │  │  └─ icon-truck.svg
+│  │  ├─ global
+│  │  │  └─ logo-SUI.png
+│  │  ├─ home
+│  │  │  ├─ icon-badge-check.svg
+│  │  │  ├─ icon-factory.svg
+│  │  │  ├─ icon-globe.svg
+│  │  │  └─ icon-iso.svg
+│  │  └─ products
+│  │     ├─ icon-clipboard.svg
+│  │     ├─ icon-dimensions.svg
+│  │     ├─ icon-flask.svg
+│  │     └─ icon-sustainability.svg
+│  └─ images
+│     ├─ about
+│     │  └─ about-factory.webp
+│     ├─ contact
+│     │  └─ hero-contact.webp
+│     ├─ facilities
+│     │  ├─ hero-facilities.webp
+│     │  └─ machine-cutting.webp
+│     ├─ home
+│     │  ├─ hero-home.webp
+│     │  ├─ product-bare-core.webp
+│     │  └─ product-block-board.webp
+│     └─ products
+│        ├─ detail-block-board.webp
+│        └─ hero-products.webp
+├─ README.md
+├─ src
+│  ├─ app
+│  │  ├─ about
+│  │  ├─ contact
+│  │  ├─ export
+│  │  ├─ facilities
+│  │  ├─ favicon.ico
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  ├─ page.tsx
+│  │  └─ products
+│  ├─ components
+│  │  ├─ atoms
+│  │  │  ├─ Button.tsx
+│  │  │  ├─ Input.tsx
+│  │  │  ├─ Logo.tsx
+│  │  │  ├─ MapView.tsx
+│  │  │  ├─ TextArea.tsx
+│  │  │  └─ Typography.tsx
+│  │  ├─ molecules
+│  │  │  ├─ CertCard.tsx
+│  │  │  ├─ FeatureItem.tsx
+│  │  │  ├─ FormField.tsx
+│  │  │  └─ StatBadge.tsx
+│  │  ├─ organisms
+│  │  └─ templates
+│  ├─ lib
+│  └─ types
+├─ tailwind.config.ts
+└─ tsconfig.json
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```

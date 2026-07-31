@@ -43,17 +43,17 @@ const config: Config = {
         themes: [
         {
             suiTheme: {
-                "primary": "#056839",           // Primary Base
-                "primary-focus": "#034224",     // Primary Dark (untuk hover)
-                "primary-content": "#ffffff",   // Warna teks di atas tombol primary
-                "secondary": "#8A5F3C",         // Secondary Base
-                "secondary-focus": "#593C25",   // Secondary Dark
+                "primary": "#056839",           // primary base
+                "primary-focus": "#034224",     // drimary dark (for hover)
+                "primary-content": "#ffffff",   // text color for primary button
+                "secondary": "#8A5F3C",         // secondary base
+                "secondary-focus": "#593C25",   // secondary dark
                 "secondary-content": "#ffffff", 
-                "accent": "#3C8B60",            // Primary Mid
-                "neutral": "#212523",           // Neutral Text
-                "base-100": "#F8F9F6",          // Background utama website
-                "base-200": "#EFECE6",          // Background untuk card
-                "base-300": "#D8D5CD",          // Border color
+                "accent": "#3C8B60",            // primary mid
+                "neutral": "#212523",           // neutral text
+                "base-100": "#F8F9F6",          // main background color for website
+                "base-200": "#EFECE6",          // main background color for card
+                "base-300": "#D8D5CD",          // border color
             },
         },
         ],

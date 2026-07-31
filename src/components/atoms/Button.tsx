@@ -14,7 +14,7 @@ export default function Button({
     children, 
     ...props 
 }: ButtonProps) {
-    const baseClass = 'btn font-sans font-semibold rounded-none';
+    const baseClass = 'btn font-sans font-semibold rounded-md';
     const variantClass = {
         primary: 'bg-primary hover:bg-primary-mid text-white border-none',
         secondary: 'bg-secondary hover:bg-secondary-mid text-white border-none',

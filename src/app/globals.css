@@ -7,8 +7,16 @@
     @apply bg-neutral-base text-neutral-text font-sans antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
     @apply font-serif text-primary-dark tracking-tight;
+  }
+
+  h3, h4{
+    @apply font-serif text-secondary-dark tracking-tight;
+  }
+
+  h5, h6 {
+    @apply font-serif text-neutral-base tracking-tight;
   }
 }
 
