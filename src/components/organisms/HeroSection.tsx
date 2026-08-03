@@ -4,8 +4,8 @@ import Link from 'next/link';
 export default function HeroSection() {
     return (
     <section 
-    className="relative w-full h-[600px] md:h-[700px] flex items-center bg-cover bg-bottom"
-    style={{ backgroundImage: "url('/images/home/hero-home.webp')" }}>
+        className="relative w-full h-[600px] md:h-[700px] flex items-center bg-cover bg-bottom"
+        style={{ backgroundImage: "url('/images/home/hero-home.webp')" }}>
         {/* dark overlay*/}
         <div className="absolute inset-0 bg-primary-dark/55"></div>
 
