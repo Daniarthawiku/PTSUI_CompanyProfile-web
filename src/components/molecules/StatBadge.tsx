@@ -12,8 +12,8 @@ export default function StatBadge({ icon, value, label }: StatBadgeProps) {
     <div className="flex items-center gap-4">
         {icon && (
             <div className="text-primary-mid w-10 h-10 flex-shrink-0">
-            {icon}
-            </div>
+                {icon}
+            </div>  
         )}
         
         <div className="flex flex-col">

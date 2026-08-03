@@ -6,6 +6,8 @@ import ProductCardDetail from "@/components/organisms/ProductCardDetail";
 import FadeIn from '@/components/atoms/FadeIn';
 import StatBadge from "@/components/molecules/StatBadge";
 
+import { CheckBadgeIcon, CalendarIcon, BuildingOfficeIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+
 export default function Home() {
   // dummy data for Bare Core product specifications
   const bareCoreSpecs = [
@@ -27,10 +29,10 @@ export default function Home() {
 
       <FadeIn direction="up" delay={0.2} className="py-12 bg-neutral-card border-b border-neutral-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-8">
-          <StatBadge value="30+" label="Years Experience" />
-          <StatBadge value="15k" label="SQM Facility" />
-          <StatBadge value="Global" label="Export Network" />
-          <StatBadge value="ISO 9001" label="Certified" />
+          <StatBadge icon={<CalendarIcon className="w-full h-full" />} value="30+" label="Years Experience" />
+          <StatBadge icon={<BuildingOfficeIcon className="w-full h-full" />} value="15k" label="SQM Facility" />
+          <StatBadge icon={<GlobeAltIcon className="w-full h-full" />}value="Global" label="Export Network" />
+          <StatBadge icon={<CheckBadgeIcon className="w-full h-full" />} value="ISO 9001" label="Certified" />
         </div>
       </FadeIn>
 
