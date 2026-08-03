@@ -28,12 +28,12 @@ export default function ProductCardDetail({
             <Typography variant="body" className="mb-8">{description}</Typography>
             
             {/* render feature */}
-            {/* {features && <div className="flex flex-col gap-3 mb-8">{features}</div>}
+            {features && <div className="flex flex-col gap-3 mb-8">{features}</div>}
 
             <div className="overflow-x-auto border border-neutral-border bg-neutral-base">
                 <table className="table w-full text-sm font-sans rounded-none">
                     <tbody>
-                        {specs.map((spec, index) => (
+                        {specs?.map((spec, index) => (
                         <tr key={index} className="border-b border-neutral-border last:border-0 hover:bg-neutral-card 
                         transition-colors">
                             <td className="font-bold text-primary-dark bg-primary-soft/30 w-1/3 py-4">{spec.label}</td>
@@ -42,7 +42,7 @@ export default function ProductCardDetail({
                     ))}
                     </tbody>
                 </table>
-            </div> */}
+            </div>
         </div>
 
         {/* image area */}
