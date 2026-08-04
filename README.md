@@ -8,33 +8,6 @@ ptsui-website
 ├─ package.json
 ├─ postcss.config.mjs
 ├─ public
-│  ├─ icons
-│  │  ├─ about
-│  │  │  ├─ icon-certificat.svg
-│  │  │  ├─ icon-leaf-sync.svg
-│  │  │  └─ icon-shield-check.svg
-│  │  ├─ contact
-│  │  │  ├─ icon-mail.svg
-│  │  │  ├─ icon-phone.svg
-│  │  │  ├─ icon-pin.svg
-│  │  │  └─ icon-whatsapp.svg
-│  │  ├─ export
-│  │  │  ├─ icon-bank.svg
-│  │  │  ├─ icon-check-circle.svg
-│  │  │  ├─ icon-globe-large.svg
-│  │  │  └─ icon-truck.svg
-│  │  ├─ global
-│  │  │  └─ logo-SUI.png
-│  │  ├─ home
-│  │  │  ├─ icon-badge-check.svg
-│  │  │  ├─ icon-factory.svg
-│  │  │  ├─ icon-globe.svg
-│  │  │  └─ icon-iso.svg
-│  │  └─ products
-│  │     ├─ icon-clipboard.svg
-│  │     ├─ icon-dimensions.svg
-│  │     ├─ icon-flask.svg
-│  │     └─ icon-sustainability.svg
 │  └─ images
 │     ├─ about
 │     │  └─ about-factory.webp
@@ -65,6 +38,7 @@ ptsui-website
 │  ├─ components
 │  │  ├─ atoms
 │  │  │  ├─ Button.tsx
+│  │  │  ├─ FadeIn.tsx
 │  │  │  ├─ Input.tsx
 │  │  │  ├─ Logo.tsx
 │  │  │  ├─ MapView.tsx
@@ -76,6 +50,10 @@ ptsui-website
 │  │  │  ├─ FormField.tsx
 │  │  │  └─ StatBadge.tsx
 │  │  ├─ organisms
+│  │  │  ├─ Footer.tsx
+│  │  │  ├─ HeroSection.tsx
+│  │  │  ├─ Navbar.tsx
+│  │  │  └─ ProductCardDetail.tsx
 │  │  └─ templates
 │  ├─ lib
 │  └─ types
