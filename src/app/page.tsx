@@ -5,6 +5,8 @@ import Footer from "@/components/organisms/Footer";
 import ProductCardDetail from "@/components/organisms/ProductCardDetail";
 import FadeIn from '@/components/atoms/FadeIn';
 import StatBadge from "@/components/molecules/StatBadge";
+import PageWrapper from '@/components/templates/PageWrapper';
+import Section from '@/components/templates/Section';
 
 import { CheckBadgeIcon, CalendarIcon, BuildingOfficeIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 
@@ -23,21 +25,20 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col w-full">
-      <Navbar></Navbar>
-      <HeroSection></HeroSection>
+  <PageWrapper className="!pt-0"> 
+    <Navbar />
+    <HeroSection />
 
-      <FadeIn direction="up" delay={0.2} className="py-12 bg-neutral-card border-b border-neutral-border">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-8">
+      <Section bgClass="bg-neutral-card border-b border-neutral-border">
+        <FadeIn direction="up" delay={0.2} className="flex flex-col md:flex-row justify-between gap-8">
           <StatBadge icon={<CalendarIcon className="w-full h-full" />} value="30+" label="Years Experience" />
           <StatBadge icon={<BuildingOfficeIcon className="w-full h-full" />} value="15k" label="SQM Facility" />
-          <StatBadge icon={<GlobeAltIcon className="w-full h-full" />}value="Global" label="Export Network" />
+          <StatBadge icon={<GlobeAltIcon className="w-full h-full" />} value="Global" label="Export Network" />
           <StatBadge icon={<CheckBadgeIcon className="w-full h-full" />} value="ISO 9001" label="Certified" />
-        </div>
-      </FadeIn>
+        </FadeIn>
+      </Section>
 
-      
-      <section className="py-16 max-w-7xl mx-auto px-6 md:px-12">
+      <Section>
         <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-primary-dark">Core Product Lines</h2>
@@ -65,9 +66,14 @@ export default function Home() {
             />
           </FadeIn>
         </div>
-      </section>
-      <MapView></MapView>
-      <Footer></Footer>
-    </div>
+      </Section>
+
+      <Section bgClass="bg-neutral-base">
+        <FadeIn direction="up">
+          <MapView />
+        </FadeIn>
+      </Section>
+      <Footer />
+    </PageWrapper>
   );
 }
