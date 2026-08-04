@@ -8,6 +8,7 @@ interface LogoProps {
 
 export default function Logo({ className = '', isDarkTheme = false }: LogoProps) {
     const textColor = isDarkTheme ? 'text-neutral-base' : 'text-primary-dark';
+    
 
     return (
     <Link 
