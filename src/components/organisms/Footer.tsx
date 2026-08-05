@@ -23,14 +23,14 @@ export default function Footer() {
         
         {/* right side: legals */}
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
-                <div className="flex flex-col gap-3 text-sm font-sans">
-                    <Typography variant="body" className="font-bold uppercase tracking-wider mb-1">Corporate</Typography>
+                <div className="flex flex-col gap-3 text-sm">
+                    <Typography variant="h4" className="uppercase tracking-wider">Corporate</Typography>
                     <Link href="#" className="text-neutral-text hover:text-primary-soft transition-colors">Legal Compliance</Link>
                     <Link href="#" className="text-neutral-text hover:text-primary-soft transition-colors">Privacy Policy</Link>
                 </div>
             
                 <div className="flex flex-col gap-3 text-sm font-sans">
-                    <Typography variant="body" className="font-bold uppercase tracking-wider mb-1">Navigation</Typography>
+                    <Typography variant="h4" className="uppercase tracking-wider">Navigation</Typography>
                     <Link href="#" className="text-neutral-text hover:text-primary-soft transition-colors">Global Export Terms</Link>
                     <Link href="#" className="text-neutral-text hover:text-primary-soft transition-colors">Sitemap</Link>
                 </div>

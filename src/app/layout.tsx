@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Merriweather, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/organisms/Navbar";
+import Footer from "@/components/organisms/Footer";
 
 // font Merriweather heading
 const merriweather = Merriweather({
@@ -30,8 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${merriweather.variable} ${plusJakartaSans.variable}`}>
-      <body className="bg-neutral-base text-neutral-text font-sans antialiased">
-        {children}
+      <body className="bg-neutral-base text-neutral-text font-sans antialiased flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

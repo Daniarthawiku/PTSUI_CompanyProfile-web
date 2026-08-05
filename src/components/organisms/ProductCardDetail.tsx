@@ -51,7 +51,8 @@ export default function ProductCardDetail({
             src={imageSrc} 
             alt={title} 
             fill 
-            className="object-cover"/>
+            className="object-cover"
+            sizes="(min-width: 768px) 100vw, (min-width: 1200px) 50vw, 33vw"/>
         </div>
     </div>
     );

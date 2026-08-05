@@ -26,9 +26,8 @@ export default function Home() {
 
   return (
   <PageWrapper className="!pt-0"> 
-    <Navbar />
     <HeroSection />
-
+    
       <Section bgClass="bg-neutral-card border-b border-neutral-border">
         <FadeIn direction="up" delay={0.2} className="flex flex-col md:flex-row justify-between gap-8">
           <StatBadge icon={<CalendarIcon className="w-full h-full" />} value="30+" label="Years Experience" />
@@ -73,7 +72,7 @@ export default function Home() {
           <MapView />
         </FadeIn>
       </Section>
-      <Footer />
+
     </PageWrapper>
   );
 }
