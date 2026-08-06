@@ -1,5 +1,5 @@
 import HeroSection from "@/components/organisms/HeroSection";
-import FadeIn from '@/components/atoms/FadeIn';
+import FadeIn from '@/components/atoms/framer/FadeIn';
 import StatBadge from "@/components/molecules/StatBadge";
 import PageWrapper from '@/components/templates/PageWrapper';
 import Section from '@/components/templates/Section';

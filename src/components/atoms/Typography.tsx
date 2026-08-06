@@ -1,8 +1,7 @@
-import React, { ElementType, HTMLAttributes } from 'react';
+import React, { ElementType, HTMLAttributes, TextareaHTMLAttributes } from 'react';
+import { TypographyProps as TypographyPropsType } from '../../types';
 
-interface TypographyProps extends HTMLAttributes<HTMLElement> {
-    tag?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
-    variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'body' | 'caption' | 'custom' ;
+interface TypographyProps  extends TextareaHTMLAttributes<HTMLTextAreaElement>, TypographyPropsType {
 }
 
 export default function Typography({ 

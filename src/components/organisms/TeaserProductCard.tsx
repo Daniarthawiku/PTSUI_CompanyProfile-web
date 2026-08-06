@@ -4,7 +4,7 @@ import Typography from '../atoms/Typography';
 import {Product} from '../../types';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Button from '../atoms/Button';
+
 
 interface TeaserProductCardProps {
     title: Product['title'];

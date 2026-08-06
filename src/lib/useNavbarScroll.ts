@@ -2,7 +2,7 @@ import { useMotionValue, useMotionValueEvent, useScroll } from "framer-motion";
 
 export function useNavbarScroll(navHeight: number = 80) {
   const { scrollY } = useScroll();
-const y = useMotionValue(0);
+  const y = useMotionValue(0);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();

@@ -66,6 +66,12 @@ export interface BadgeProps {
     children: React.ReactNode;
 }
 
+export interface TypographyProps {
+    tag?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
+    variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'body' | 'caption' | 'custom' ;
+}
+
+
 // FRAMER COMPONENTS
 export interface FadeInProps {
     children: React.ReactNode;

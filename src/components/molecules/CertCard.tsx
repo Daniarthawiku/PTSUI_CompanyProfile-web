@@ -2,12 +2,6 @@ import React from 'react';
 import Typography from '../atoms/Typography';
 import { CertCardProps } from '../../types';
 
-interface CertCard {
-    icon: CertCardProps['icon'];
-    title: CertCardProps['title'];
-    description: CertCardProps['description'];
-}
-
 export default function CertCard({ icon, title, description }: CertCardProps) {
     return (
     <div className="bg-neutral-card border border-neutral-border p-6 md:p-8 flex flex-col gap-4 rounded-none hover:shadow-md transition-shadow">

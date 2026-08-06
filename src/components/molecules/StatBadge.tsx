@@ -2,12 +2,6 @@ import React from 'react';
 import Typography from '../atoms/Typography';
 import { StatBadgeProps } from '../../types';
 
-interface StatBadge {
-    icon?: StatBadgeProps['icon'];
-    value: StatBadgeProps['value'];
-    label: StatBadgeProps['label'];
-}
-
 
 export default function StatBadge({ icon, value, label }: StatBadgeProps) {
     return (

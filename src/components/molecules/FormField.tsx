@@ -1,14 +1,6 @@
 import React from 'react';
 import { FormFieldProps } from '../../types';
 
-interface FormField {
-    label: FormFieldProps['label'];
-    id: FormFieldProps['id'];
-    required?: FormFieldProps['required'];
-    error?: FormFieldProps['error'];
-    children: FormFieldProps['children'];
-}
-
 export default function FormField({ label, id, required, error, children }: FormFieldProps) {
     return (
         <div className="form-control w-full">

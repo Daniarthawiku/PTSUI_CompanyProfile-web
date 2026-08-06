@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import FadeIn from '../atoms/FadeIn';
+import FadeIn from '../atoms/framer/FadeIn';
 
 export default function HeroSection() {
     return (
