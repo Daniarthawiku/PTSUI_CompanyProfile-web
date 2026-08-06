@@ -4,6 +4,7 @@ import StatBadge from "@/components/molecules/StatBadge";
 import PageWrapper from '@/components/templates/PageWrapper';
 import Section from '@/components/templates/Section';
 import TeaserProductCard from "@/components/organisms/TeaserProductCard";
+import Typography from "@/components/atoms/Typography";
 
 import { CheckBadgeIcon, CalendarIcon, BuildingOfficeIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 
@@ -23,10 +24,10 @@ export default function Home() {
 
       <Section>
         <FadeIn direction="up">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl font-bold text-primary-dark">Core Product Lines</h2>
-            <p className="text-neutral-text mt-4 max-w-2xl mx-auto">Engineered for durability and precision, our signature timber products
-              form the foundation of high-end furniture and construction worldwide.</p>
+          <div className="text-center align-center mb-12 flex-col">
+            <Typography variant="h2">Core Product Lines</Typography>
+            <Typography variant="body" className="mt-4 max-w-2xl mx-auto">Engineered for durability and precision, our signature timber products
+              form the foundation of high-end furniture and construction worldwide.</Typography>
           </div>
         </FadeIn>
 
@@ -52,13 +53,6 @@ export default function Home() {
           </FadeIn>
         </div>
       </Section>
-
-      {/* <Section bgClass="bg-neutral-base">
-        <FadeIn direction="up">
-          <MapView />
-        </FadeIn>
-      </Section> */}
-
     </PageWrapper>
   );
 }

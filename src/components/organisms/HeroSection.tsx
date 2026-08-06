@@ -3,6 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import FadeIn from '../atoms/framer/FadeIn';
+import TextReveal from '../atoms/framer/TextReveal';
+import Typography from '../atoms/Typography';
 
 export default function HeroSection() {
     return (
@@ -15,14 +17,15 @@ export default function HeroSection() {
         {/* content & button */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full text-neutral-base">
             <FadeIn direction="left" delay={0.1}>
-                <h5  className="font-serif text-4xl md:text-6xl font-bold max-w-4xl leading-tight mb-6 text-balance">
-                Premium Timber Solutions for Global Markets
-                </h5>
-        
-                <p className="font-sans text-lg md:text-xl max-w-2xl mb-10 text-neutral-border">
+                <TextReveal>
+                    <Typography variant="h3" className="text-4xl md:text-6xl mb-6">
+                        Premium Timber Solutions for Global Markets
+                    </Typography>
+                </TextReveal>
+                <Typography variant="custom" className="font-sans text-lg md:text-xl max-w-2xl mb-10 text-neutral-border">
                 Over 10+ years of manufacturing excellence, delivering sustainable, high-precision Bare Core and 
                 Block Board to the worlds most demanding industries.
-                </p>
+                </Typography>
             </FadeIn>
 
             <FadeIn direction="left" delay={0.3}>

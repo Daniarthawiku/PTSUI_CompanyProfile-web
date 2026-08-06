@@ -25,7 +25,7 @@ export default function TeaserProductCard({
             alt={title} 
             fill 
             className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-            sizes="50vw "/>
+            sizes="50vw"/>
         </div>
 
         {/* text content & spec tabel */}

@@ -15,8 +15,8 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
                 <Logo isDarkTheme={true} />
                 <Typography variant="h4" className="max-w-sm font-regular tracking-wider">
-                    Leading the industry in sustainable, 
-                    high-precision timber manufacturing since 2015.
+                    Leading the industry in sustainable and
+                    high precision timber manufacturing since 2015.
                 </Typography>
                 <Typography variant="custom" className="text-xs text-secondary-mid">
                     © {currentYear} PT. Sahabat Utama Industri. All Rights Reserved.

@@ -7,6 +7,9 @@ import Badge from '@/components/atoms/Badge';
 import CertCard from '@/components/molecules/CertCard';
 import Typography from '@/components/atoms/Typography';
 import { ShieldCheckIcon, DocumentCheckIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import TextReveal from '@/components/atoms/framer/TextReveal';
+import StaggerContainer from '@/components/atoms/framer/StaggerContainer';
+import StaggerItem from '@/components/atoms/framer/StaggerItem';
 
 export default function AboutPage() {
     return (
@@ -46,8 +49,7 @@ export default function AboutPage() {
                             fill 
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 50vw"
-                            priority
-                        />
+                            priority/>
                     </FadeIn>
                 </div>
             </div>
@@ -58,23 +60,23 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 
                 <FadeIn direction="right" delay={0.1}>
-                    <div className="flex flex-col gap-4 p-8 border-l-2 border-primary-soft">
+                    <TextReveal className="flex flex-col gap-4 p-8 border-l-2 border-primary-soft">
                         <Typography variant="custom" className="font-serif text-3xl font-medium text-neutral-base">Our Vision</Typography>
                         <Typography variant="custom" className="font-sans text-lg leading-[1.6] text-neutral-base/90">
                             To be the premier global standard in sustainable industrial timber manufacturing, proving that uncompromising 
                             precision can coexist with profound environmental stewardship.
                         </Typography>
-                    </div>
+                    </TextReveal>
                 </FadeIn>
 
-                <FadeIn direction="left" delay={0.2}>
-                    <div className="flex flex-col gap-4 p-8 border-l-2 border-primary-soft">
+                <FadeIn direction="left" delay={0.1}>
+                    <TextReveal className="flex flex-col gap-4 p-8 border-l-2 border-primary-soft">
                         <Typography variant="custom" className="font-serif text-3xl font-medium text-neutral-base">Our Mission</Typography>
                         <Typography variant="custom" className="font-sans text-lg leading-[1.6] text-neutral-base/90">
                             We engineer high-performance wood products through rigorous quality control, empower our local workforce with 
                             world-class technical expertise, and strictly adhere to international ecological compliance protocols.
                         </Typography>
-                    </div>
+                    </TextReveal>
                 </FadeIn>
 
             </div>
@@ -92,31 +94,31 @@ export default function AboutPage() {
                 </div>
             </FadeIn>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <FadeIn direction="up" delay={0.1}>
+            <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <StaggerItem>
                     <CertCard 
                         icon={<ShieldCheckIcon className="w-full h-full" />}
                         title="AMDAL Certified"
                         description="Our Environmental Impact Analysis (AMDAL) guarantees our large-scale operations maintain strict
                         ecological balance, minimizing footprint while maximizing efficiency."/>
-                </FadeIn>
+                </StaggerItem>
 
-                <FadeIn direction="up" delay={0.2}>
+                <StaggerItem>
                     <CertCard 
                         icon={<SparklesIcon className="w-full h-full" />}
                         title="UKL-UPL Standard"
                     description="Continuous environmental management and monitoring programs are actively enforced across all our 
                     processing facilities to safeguard local ecosystems."/>
-                </FadeIn>
+                </StaggerItem>
 
-                <FadeIn direction="up" delay={0.3}>
+                <StaggerItem>
                     <CertCard 
                         icon={<DocumentCheckIcon className="w-full h-full" />}
                         title="IHPA Compliant"
                         description="Aligned with the International Wood Products Association, ensuring all exports meet stringent 
                         international legality, quality, and grading requirements."/>
-                </FadeIn>
-            </div>
+                </StaggerItem>
+            </StaggerContainer>
         </Section>
     </PageWrapper>
     );
