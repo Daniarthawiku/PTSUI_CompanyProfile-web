@@ -1,19 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Typography from '../atoms/Typography';
-
-interface SpecItem {
-    label: string;
-    value: string;
-}
+import { ProductSpec as SpecItem } from '../../types';
+import { Product } from '../../types';
 
 interface ProductCardDetailProps {
-    title: string;
-    description: string;
-    imageSrc: string;
+    title: Product['title'];
+    description: Product['description'];
+    imageSrc: Product['imageSrc'];
     specs: SpecItem[];
     features?: React.ReactNode; 
-    reverse?: boolean; 
+    reverse?: Product['isReversedLayout'];
 }
 
 export default function ProductCardDetail({
@@ -44,7 +41,7 @@ export default function ProductCardDetail({
                 </table>
             </div>
         </div>
-
+        
         {/* image area */}
         <div className="flex-1 relative min-h-[300px] md:min-h-[400px] w-full">
             <Image 

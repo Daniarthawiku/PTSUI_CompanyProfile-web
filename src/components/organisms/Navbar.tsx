@@ -9,12 +9,12 @@ import { motion } from 'framer-motion';
 import { useNavbarScroll } from '@/lib/useNavbarScroll';
 
 const NAV_LINKS = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Products', href: '/products' },
-  { name: 'Facilities', href: '/facilities' },
-  { name: 'Export', href: '/export' },
-  { name: 'Contact', href: '/contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Products', href: '/products' },
+    { name: 'Facilities', href: '/facilities' },
+    { name: 'Export', href: '/export' },
+    { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
@@ -81,7 +81,7 @@ export default function Navbar() {
                                 exit={{ opacity: 0 }}
                                 transition={{
                                 type: "spring",
-                                stiffness: 200,
+                                stiffness: 300,
                                 damping: 45,
                             }}/>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
         </div>
         
         <div className="navbar-end gap-4 items-center">
-            <span className="text-sm font-bold font-sans hidden md:inline text-primary-dark">EN/ID</span>
+            {/* <span className="text-sm font-bold font-sans hidden md:inline text-primary-dark">EN/ID</span> */}
             <Link href="/contact">
                 <Button variant="primary" size="sm">Request Quote</Button>
             </Link>

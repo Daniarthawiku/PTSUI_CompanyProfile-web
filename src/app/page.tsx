@@ -1,29 +1,13 @@
-import MapView from "@/components/atoms/MapView";
 import HeroSection from "@/components/organisms/HeroSection";
-import Navbar from "@/components/organisms/Navbar";
-import Footer from "@/components/organisms/Footer";
-import ProductCardDetail from "@/components/organisms/ProductCardDetail";
 import FadeIn from '@/components/atoms/FadeIn';
 import StatBadge from "@/components/molecules/StatBadge";
 import PageWrapper from '@/components/templates/PageWrapper';
 import Section from '@/components/templates/Section';
+import TeaserProductCard from "@/components/organisms/TeaserProductCard";
 
 import { CheckBadgeIcon, CalendarIcon, BuildingOfficeIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
-  // dummy data for Bare Core product specifications
-  const bareCoreSpecs = [
-    { label: 'Raw Material', value: 'Albasia Falcata' },
-    { label: 'Thickness (mm)', value: '13.0mm - 15.0mm' },
-    { label: 'Dimensions (mm)', value: '1220mm x 2440mm (4\' x 8\')' },
-  ];
-
-  const blockBoardSpecs = [
-    { label: 'Raw Material', value: 'Albasia Barecore, Short Core, and Dry Face/Back' },
-    { label: 'Thickness (mm)', value: '15.0mm - 18.0mm (Custom available)' },
-    { label: 'Dimensions (mm)', value: '1220mm x 2440mm (4\' x 8\')' },
-  ];
-
   return (
   <PageWrapper className="!pt-0"> 
     <HeroSection />
@@ -41,37 +25,39 @@ export default function Home() {
         <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-primary-dark">Core Product Lines</h2>
-            <p className="text-neutral-text mt-4">Engineered for durability and precision.</p>
+            <p className="text-neutral-text mt-4 max-w-2xl mx-auto">Engineered for durability and precision, our signature timber products
+              form the foundation of high-end furniture and construction worldwide.</p>
           </div>
         </FadeIn>
 
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-row gap-12">
           <FadeIn direction="right" delay={0.1}>
-            <ProductCardDetail 
+            <TeaserProductCard 
               title="Bare Core"
-              description="Premium Albasia bare core offering exceptional strength-to-weight ratio."
+              description="Premium Albasia bare core offering exceptional strength-to-weight ratio. 
+              Calibrated to exact millimeter tolerances for seamless veneer lamination."
               imageSrc="/images/home/product-bare-core.webp"
-              specs={bareCoreSpecs} 
+              href="/products/bare-core"
             />
           </FadeIn>
 
           <FadeIn direction="left" delay={0.3}>
-            <ProductCardDetail 
+            <TeaserProductCard 
               title="Block Board"
-              description="High-density block board engineered for superior screw-holding capacity."
+              description="High-density block board engineered for superior screw-holding capacity and resistance to warping.
+              Ideal for heavy-duty cabinetry and architectural applications."
               imageSrc="/images/home/product-block-board.webp"
-              specs={blockBoardSpecs} 
-              reverse={true}
+              href="/products/block-board"
             />
           </FadeIn>
         </div>
       </Section>
 
-      <Section bgClass="bg-neutral-base">
+      {/* <Section bgClass="bg-neutral-base">
         <FadeIn direction="up">
           <MapView />
         </FadeIn>
-      </Section>
+      </Section> */}
 
     </PageWrapper>
   );
