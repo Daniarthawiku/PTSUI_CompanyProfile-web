@@ -1,4 +1,4 @@
-import { ReactNode, TextareaHTMLAttributes } from 'react';
+import { ReactNode } from 'react';
 
 // PRODUCT DOMAIN 
 export interface ProductSpec {
@@ -62,11 +62,40 @@ export interface FormFieldProps {
     children: React.ReactNode; // placeholder for <Input /> or <Textarea />
 }
 
+export interface BadgeProps {
+    children: React.ReactNode;
+}
+
 // FRAMER COMPONENTS
 export interface FadeInProps {
     children: React.ReactNode;
     delay?: number;
     duration?: number;
     direction?: 'up' | 'down' | 'left' | 'right' | 'none';
+    className?: string;
+}
+
+export interface StaggerContainerProps {
+    children: React.ReactNode;
+    className?: string;
+    delayChildren?: number;
+    staggerChildren?: number;
+}
+
+export interface StaggerItemProps {
+    children: React.ReactNode;
+    className?: string;
+}
+
+export interface ScaleInProps {
+    children: React.ReactNode;
+    delay?: number;
+    duration?: number;
+    className?: string;
+}
+
+export interface TextRevealProps {
+    children: React.ReactNode;
+    delay?: number;
     className?: string;
 }
