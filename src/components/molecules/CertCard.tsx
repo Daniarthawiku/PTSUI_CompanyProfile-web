@@ -1,10 +1,11 @@
 import React from 'react';
 import Typography from '../atoms/Typography';
+import { CertCardProps } from '../../types';
 
-interface CertCardProps {
-    icon: React.ReactNode;
-    title: string;
-    description: string;
+interface CertCard {
+    icon: CertCardProps['icon'];
+    title: CertCardProps['title'];
+    description: CertCardProps['description'];
 }
 
 export default function CertCard({ icon, title, description }: CertCardProps) {

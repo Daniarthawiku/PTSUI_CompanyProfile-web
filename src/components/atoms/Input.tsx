@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes } from 'react';
+import { Input as InputPropsType } from '../../types';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-    error?: boolean;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>, InputPropsType {
 }
 
 export default function Input({ error, className = '', ...props }: InputProps) {

@@ -1,11 +1,12 @@
 import React from 'react';
+import { FormFieldProps } from '../../types';
 
-interface FormFieldProps {
-    label: string;
-    id: string;
-    required?: boolean;
-    error?: string;
-    children: React.ReactNode; // placeholder for <Input /> or <Textarea />
+interface FormField {
+    label: FormFieldProps['label'];
+    id: FormFieldProps['id'];
+    required?: FormFieldProps['required'];
+    error?: FormFieldProps['error'];
+    children: FormFieldProps['children'];
 }
 
 export default function FormField({ label, id, required, error, children }: FormFieldProps) {

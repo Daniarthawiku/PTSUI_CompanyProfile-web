@@ -1,10 +1,11 @@
 import React from 'react';
 import Typography from '../atoms/Typography';
+import { FeatureItemProps } from '../../types';
 
-interface FeatureItemProps {
-  icon?: React.ReactNode; 
-  title: string;
-  description?: string; 
+interface FeatureItem {
+    icon?: FeatureItemProps['icon']; 
+    title: FeatureItemProps['title'];
+    description?: FeatureItemProps['description']; 
 }
 
 export default function FeatureItem({ icon, title, description }: FeatureItemProps) {

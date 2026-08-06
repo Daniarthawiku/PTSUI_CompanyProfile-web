@@ -39,6 +39,7 @@ ptsui-website
 │  │  ├─ atoms
 │  │  │  ├─ Button.tsx
 │  │  │  ├─ FadeIn.tsx
+│  │  │  ├─ framer
 │  │  │  ├─ Input.tsx
 │  │  │  ├─ Logo.tsx
 │  │  │  ├─ MapView.tsx
@@ -53,10 +54,15 @@ ptsui-website
 │  │  │  ├─ Footer.tsx
 │  │  │  ├─ HeroSection.tsx
 │  │  │  ├─ Navbar.tsx
-│  │  │  └─ ProductCardDetail.tsx
+│  │  │  ├─ ProductCardDetail.tsx
+│  │  │  └─ TeaserProductCard.tsx
 │  │  └─ templates
+│  │     ├─ PageWrapper.tsx
+│  │     └─ Section.tsx
 │  ├─ lib
+│  │  └─ useNavbarScroll.ts
 │  └─ types
+│     └─ index.ts
 ├─ tailwind.config.ts
 └─ tsconfig.json
 

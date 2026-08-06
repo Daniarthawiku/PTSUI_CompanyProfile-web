@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, TextareaHTMLAttributes } from 'react';
 
 // PRODUCT DOMAIN 
 export interface ProductSpec {
@@ -17,20 +17,56 @@ export interface Product {
 }
 
 // UI COMPONENTS DOMAIN 
-export interface StatItem {
+export interface StatBadgeProps {
     value: string;
     label: string;
     icon?: ReactNode; 
 }
 
-export interface CertificationItem {
+export interface CertCardProps {
     title: string;
     description: string;
     icon: ReactNode;
 }
 
-export interface FeatureItem {
+export interface FeatureItemProps {
     title: string;
     description?: string;
     icon?: ReactNode;
+}
+
+export interface Button {
+    variant?: 'primary' | 'secondary' | 'outline' | 'outline-dark';
+    size?: 'sm' | 'md' | 'lg';
+    isFullWidth?: boolean;
+}
+
+export interface Input {
+    error?: boolean;
+}
+
+export interface LogoProps {
+    className?: string;
+    isDarkTheme?: boolean;
+}
+
+export interface TextArea {
+    error?: boolean;
+}
+
+export interface FormFieldProps {
+    label: string;
+    id: string;
+    required?: boolean;
+    error?: string;
+    children: React.ReactNode; // placeholder for <Input /> or <Textarea />
+}
+
+// FRAMER COMPONENTS
+export interface FadeInProps {
+    children: React.ReactNode;
+    delay?: number;
+    duration?: number;
+    direction?: 'up' | 'down' | 'left' | 'right' | 'none';
+    className?: string;
 }

@@ -1,9 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react';
+import { Button as ButtonPropsType } from '../../types';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary' | 'outline' | 'outline-dark';
-    size?: 'sm' | 'md' | 'lg';
-    isFullWidth?: boolean;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, ButtonPropsType {
 }
 
 export default function Button({ 

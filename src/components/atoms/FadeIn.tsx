@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FadeInProps } from '../../types';
 
-interface FadeInProps {
+interface FadeIn {
     children: React.ReactNode;
-    delay?: number;
-    duration?: number;
-    direction?: 'up' | 'down' | 'left' | 'right' | 'none';
-    className?: string;
+    delay?: FadeIn[];
+    duration?: FadeIn[];
+    direction?: FadeIn[];
+    className?: FadeIn[];
 }
 
 export default function FadeIn({ 

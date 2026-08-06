@@ -1,7 +1,7 @@
 import React, { TextareaHTMLAttributes } from 'react';
+import {TextArea as TextAreaPropsType } from '../../types';
 
-interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  error?: boolean;
+interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>, TextAreaPropsType {
 }
 
 export default function Textarea({ error, className = '', ...props }: TextAreaProps) {

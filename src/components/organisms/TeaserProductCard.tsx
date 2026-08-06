@@ -35,8 +35,8 @@ export default function TeaserProductCard({
             
             <Link 
                 href={href}
-                className="text-neutral-text hover:text-secondary-mid transition-colors inline-flex items-center gap-2">
-                Sitemap
+                className="text-primary text-xs tracking-wide font-black hover:text-secondary-mid transition-colors inline-flex items-center gap-1">
+                Explore Specs
                 <ArrowRightIcon className="w-4 h-4 group-hover:scale-105 transition-transform duration-500" strokeWidth={2.5} />
             </Link>
         </div>
