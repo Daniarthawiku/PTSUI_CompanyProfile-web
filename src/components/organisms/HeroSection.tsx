@@ -6,9 +6,10 @@ import FadeIn from '../atoms/framer/FadeIn';
 import TextReveal from '../atoms/framer/TextReveal';
 import Typography from '../atoms/Typography';
 
+
 export default function HeroSection() {
     return (
-    <section 
+    <section
         className="relative w-full h-[600px] md:h-[700px] flex items-center bg-cover bg-bottom"
         style={{ backgroundImage: "url('/images/home/hero-home.webp')" }}>
         {/* dark overlay*/}
