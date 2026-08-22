@@ -105,3 +105,48 @@ export interface TextRevealProps {
     delay?: number;
     className?: string;
 }
+
+// PRODUCTS PAGE COMPONENTS
+export interface IconProps {
+    name: string;
+    className?: string;
+    size?: number;
+}
+
+export interface LabelCapsProps {
+    children: React.ReactNode;
+    className?: string;
+    tag?: 'span' | 'p' | 'h3' | 'h4';
+}
+
+export interface FeatureBadgeProps {
+    icon: string;
+    label: string;
+    className?: string;
+}
+
+export interface QualityCardProps {
+    icon: string;
+    title: string;
+    description: string;
+    className?: string;
+}
+
+export interface ProductHeroSectionProps {
+    headline: string;
+    description: string;
+    imageSrc: string;
+    imageAlt: string;
+}
+
+export interface QualityControlItem {
+    icon: string;
+    title: string;
+    description: string;
+}
+
+export interface QualityControlSectionProps {
+    headline: string;
+    description: string;
+    items: QualityControlItem[];
+}
