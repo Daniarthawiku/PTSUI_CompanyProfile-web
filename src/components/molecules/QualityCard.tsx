@@ -5,10 +5,6 @@ import Icon from '../atoms/Icon';
 import Typography from '../atoms/Typography';
 import { QualityCardProps } from '../../types';
 
-/**
- * QualityCard Molecule — glassmorphic card for the dark-bg Quality Control section.
- * Renders an icon, title, and description on a translucent green surface.
- */
 export default function QualityCard({ icon, title, description, className = '' }: QualityCardProps) {
     return (
     <div className={`bg-primary-mid/20 p-6 rounded border border-primary-mid/30 ${className}`}>

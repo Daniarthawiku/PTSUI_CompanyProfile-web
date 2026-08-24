@@ -25,11 +25,9 @@ interface ProductCardDetailProps {
 export default function ProductCardDetail({
     title, description, imageSrc, specs, features, reverse = false, titleColor = 'text-primary-dark'
 }: ProductCardDetailProps) {
-    const cardBg = reverse
-        ? 'bg-neutral-base border border-neutral-border shadow-[0_2px_10px_rgba(33,37,35,0.02)] relative overflow-hidden'
-        : 'bg-neutral-card border border-neutral-border';
+    const cardBg = 'bg-neutral-card border border-neutral-border';
 
-    const tableBg = reverse ? 'bg-neutral-card' : 'bg-neutral-base';
+    const tableBg = 'bg-neutral-card';
     const headerBg = 'bg-primary-soft';
 
     return (
@@ -80,33 +78,34 @@ export default function ProductCardDetail({
                     {/* Spec Table Column */}
                     <div className={`lg:col-span-7 ${reverse ? 'order-2 lg:order-1' : ''}`}>
                         <div className={`${tableBg} border border-neutral-border rounded overflow-hidden`}>
-                            <StaggerContainer delayChildren={0.1} staggerChildren={0.05}>
-                                <table className="w-full text-left border-collapse">
-                                    <thead className={headerBg}>
-                                        <tr>
-                                            <th className="py-3 px-4 border-b border-neutral-border">
-                                                <LabelCaps className="text-primary-dark">Specification</LabelCaps>
-                                            </th>
-                                            <th className="py-3 px-4 border-b border-neutral-border">
-                                                <LabelCaps className="text-primary-dark">Detail</LabelCaps>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="font-sans text-sm">
-                                        {specs?.map((spec, index) => (
-                                            <StaggerItem key={index}>
-                                                <tr className="border-b border-neutral-border last:border-0">
-                                                    <td className="py-3 px-4 font-medium bg-neutral-base/50 text-neutral-text">
-                                                        {spec.label}
-                                                    </td>
-                                                    <td className="py-3 px-4 text-neutral-text">
-                                                        {spec.value}
-                                                    </td>
-                                                </tr>
-                                            </StaggerItem>
-                                        ))}
-                                    </tbody>
-                                </table>
+                            <StaggerContainer delayChildren={0.1} staggerChildren={0.05} className="w-full text-left flex flex-col">
+                            
+                            {/* Table Header (Flexbox) */}
+                            <div className={`${headerBg} flex flex-col sm:flex-row border-b border-neutral-border`}>
+                                <div className="py-3 px-4 sm:w-1/3">
+                                    <LabelCaps className="text-primary-dark">Specification</LabelCaps>
+                                </div>
+                                <div className="py-3 px-4 flex-1">
+                                    <LabelCaps className="text-primary-dark">Detail</LabelCaps>
+                                </div>
+                            </div>
+
+                            {/* Table Body (Flexbox) */}
+                            <div className="font-sans text-sm flex flex-col">
+                                {specs?.map((spec, index) => (
+                                    <StaggerItem 
+                                        key={index} 
+                                        className="flex flex-col sm:flex-row border-b border-neutral-border last:border-0 hover:bg-neutral-base/10 transition-colors"
+                                    >
+                                        <div className="py-3 px-4 font-medium bg-neutral-base/50 text-neutral-text sm:w-1/3 flex items-center">
+                                            {spec.label}
+                                        </div>
+                                        <div className="py-3 px-4 text-neutral-text flex-1 flex items-center">
+                                            {spec.value}
+                                        </div>
+                                    </StaggerItem>
+                                ))}
+                            </div>
                             </StaggerContainer>
                         </div>
                     </div>
