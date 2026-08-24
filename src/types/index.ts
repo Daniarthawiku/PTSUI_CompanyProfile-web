@@ -150,3 +150,31 @@ export interface QualityControlSectionProps {
     description: string;
     items: QualityControlItem[];
 }
+
+// FACILITIES PAGE COMPONENTS
+export interface StatCounterProps {
+    value: string;
+    label: string;
+    className?: string;
+}
+
+export interface ImageOverlayProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+export interface BentoImageCardProps {
+    imageSrc: string;
+    imageAlt: string;
+    title?: string;
+    badgeLabel?: string;
+    className?: string;
+}
+
+export interface BentoInfoCardProps {
+    title: string;
+    description: string;
+    linkText?: string;
+    linkHref?: string;
+    className?: string;
+}
