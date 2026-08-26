@@ -178,3 +178,25 @@ export interface BentoInfoCardProps {
     linkHref?: string;
     className?: string;
 }
+
+// EXPORT PAGE COMPONENTS
+export interface ExportDestinationBadgeProps {
+    country: string;
+    className?: string;
+}
+
+export interface ShippingTermItemProps {
+    title: string;
+    description: string;
+    accentClass?: string;
+}
+
+export interface PaymentMethodItemProps {
+    label: string;
+}
+
+export interface ExportStatCardProps {
+    value: string;
+    label: string;
+    className?: string;
+}
